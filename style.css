@@ -1,0 +1,122 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	width: 100%;
+	height: 100%;
+}
+header {
+	background-image: url(images/desktop/image-hero.jpg);
+	background-repeat: no-repeat;
+	background-blend-mode: darken;
+	background-color: rgba(0, 0, 0, 0.4);
+	background-size: 100% auto;
+	height: 90vh;
+	font-family: "Josefin Sans", sans-serif;
+}
+header h1 {
+	color: hsl(0, 0%, 100%);
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.headerText {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	width: 40%;
+	height: 35vh;
+	font-size: 40px;
+	margin-left: 18rem;
+	border: 3px solid white;
+}
+.mainNav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 30vh;
+	padding: 8rem;
+}
+.navBar li,
+.navBar ul,
+.navBar a {
+	list-style: none;
+	text-decoration: none;
+	margin-right: 2rem;
+	color: hsl(0, 0%, 100%);
+}
+.navBar {
+	display: flex;
+}
+.container {
+	font-family: "Josefin Sans", sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+}
+.topContainer {
+	display: flex;
+	align-items: center;
+	position: relative;
+	margin-top: 10rem;
+}
+.leftSquare {
+	margin-left: 15rem;
+}
+.rightSquare {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 30%;
+	height: 50vh;
+	background-color: hsl(0, 0%, 100%);
+	margin-left: -10rem;
+	margin-bottom: -20rem;
+}
+.rightSquare p {
+	padding-left: 7rem;
+	margin-top: 2rem;
+}
+.rightSquare h2 {
+	color: hsl(0, 0%, 0%);
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 40px;
+	padding-left: 7rem;
+}
+.midContainer {
+	font-family: "Josefin Sans", sans-serif;
+	font-weight: 400;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 15rem;
+	width: 100%;
+}
+.textMid {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 4rem 16rem;
+}
+.textMid h2 {
+	text-transform: uppercase;
+}
+.imagesGall {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	width: 100%;
+}
+.deepEarth {
+	background-image: url(images/desktop/image-deep-earth.jpg);
+}
