@@ -40,6 +40,7 @@ header h1 {
 	height: 30vh;
 	padding: 8rem;
 }
+
 .navBar li,
 .navBar ul,
 .navBar a {
@@ -51,6 +52,19 @@ header h1 {
 .navBar {
 	display: flex;
 }
+.navBar a::after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 1px;
+	background: hsl(0, 0%, 100%);
+	transition: width 0.4s ease-in;
+}
+
+.navBar a:hover::after {
+	width: 100%;
+}
+
 .container {
 	display: flex;
 	align-items: center;
@@ -119,6 +133,10 @@ header h1 {
 	color: hsl(0, 0%, 0%);
 	letter-spacing: 5px;
 	cursor: pointer;
+}
+.textMid input:hover {
+	background-color: hsl(0, 0%, 0%);
+	color: hsl(0, 0%, 100%);
 }
 .gall {
 	display: flex;
@@ -213,6 +231,10 @@ header h1 {
 	background-color: rgba(0, 0, 0, 0.4);
 	cursor: pointer;
 }
+.makeitFisheye:hover {
+	background-blend-mode: screen;
+	background-color: rgba(255, 255, 255, 0.4);
+}
 .deepEarth h3,
 .deepEarth a,
 .nightArcade h3,
@@ -266,6 +288,7 @@ footer {
 	list-style: none;
 	color: hsl(0, 0%, 100%);
 	margin-top: 1rem;
+	margin-right: 2rem;
 }
 .footerNav img {
 	margin-left: -13rem;
@@ -276,7 +299,6 @@ footer {
 }
 .navBarFooter a {
 	margin-top: 2rem;
-	margin-right: 2rem;
 }
 .socials {
 	display: flex;
@@ -327,4 +349,28 @@ footer {
 .copy {
 	color: hsl(0, 0%, 55%);
 	font-weight: 400;
+}
+.attribution {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: hsl(0, 0%, 55%);
+	width: 100%;
+}
+.attribution a {
+	text-decoration: none;
+	color: red;
+	font-weight: 500;
+}
+.footerNav a::after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 1px;
+	background: hsl(0, 0%, 100%);
+	transition: width 0.4s ease-in;
+}
+
+a:hover::after {
+	width: 100%;
 }
