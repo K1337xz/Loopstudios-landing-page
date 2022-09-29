@@ -13,7 +13,7 @@ header {
 	background-repeat: no-repeat;
 	background-blend-mode: darken;
 	background-color: rgba(0, 0, 0, 0.4);
-	background-size: 100% auto;
+	background-size: cover;
 	height: 90vh;
 }
 header h1 {
@@ -51,7 +51,10 @@ header h1 {
 }
 .navBar {
 	display: flex;
+	width: 100%;
+	justify-content: flex-end;
 }
+
 .navBar a::after {
 	content: "";
 	display: block;
@@ -154,7 +157,6 @@ header h1 {
 .deepEarth {
 	width: 25vh;
 	height: 45vh;
-	border: 1px solid black;
 	background-image: url(images/desktop/image-deep-earth.jpg);
 	grid-area: 1 / 1 / 2 / 2;
 	background-blend-mode: darken;
@@ -164,7 +166,6 @@ header h1 {
 .nightArcade {
 	width: 25vh;
 	height: 45vh;
-	border: 1px solid black;
 	grid-area: 1 / 2 / 2 / 3;
 	background-image: url(images/desktop/image-night-arcade.jpg);
 	background-blend-mode: darken;
@@ -174,7 +175,6 @@ header h1 {
 .soccerTeam {
 	width: 25vh;
 	height: 45vh;
-	border: 1px solid black;
 	grid-area: 1 / 3 / 2 / 4;
 	background-image: url(images/desktop/image-soccer-team.jpg);
 	background-blend-mode: darken;
@@ -184,7 +184,6 @@ header h1 {
 .theGrid {
 	width: 25vh;
 	height: 45vh;
-	border: 1px solid black;
 	grid-area: 1 / 4 / 2 / 5;
 	background-image: url(images/desktop/image-night-arcade.jpg);
 	background-blend-mode: darken;
@@ -194,7 +193,6 @@ header h1 {
 .fromUpAbove {
 	width: 25vh;
 	height: 45vh;
-	border: 1px solid black;
 	grid-area: 2 / 1 / 3 / 2;
 	background-image: url(images/desktop/image-from-above.jpg);
 	background-blend-mode: darken;
@@ -204,7 +202,6 @@ header h1 {
 .pocketBorealis {
 	width: 25vh;
 	height: 45vh;
-	border: 1px solid black;
 	grid-area: 2 / 2 / 3 / 3;
 	background-image: url(images/desktop/image-pocket-borealis.jpg);
 	background-blend-mode: darken;
@@ -214,27 +211,23 @@ header h1 {
 .theCuriosity {
 	width: 25vh;
 	height: 45vh;
-	border: 1px solid black;
 	grid-area: 2 / 3 / 3 / 4;
 	background-image: url(images/desktop/image-curiosity.jpg);
 	background-blend-mode: darken;
 	background-color: rgba(0, 0, 0, 0.4);
 	cursor: pointer;
 }
+
 .makeitFisheye {
 	width: 25vh;
 	height: 45vh;
-	border: 1px solid black;
 	grid-area: 2 / 4 / 3 / 5;
 	background-image: url(images/desktop/image-fisheye.jpg);
 	background-blend-mode: darken;
 	background-color: rgba(0, 0, 0, 0.4);
 	cursor: pointer;
 }
-.makeitFisheye:hover {
-	background-blend-mode: screen;
-	background-color: rgba(255, 255, 255, 0.4);
-}
+
 .deepEarth h3,
 .deepEarth a,
 .nightArcade h3,
@@ -253,15 +246,15 @@ header h1 {
 .makeitFisheye a {
 	display: flex;
 	color: hsl(0, 0%, 100%);
-	justify-content: flex-start;
 	align-items: flex-end;
-	height: 100%;
+	justify-content: space-evenly;
+	width: 100%;
+	height: 50vh;
 	text-transform: uppercase;
 	font-weight: 400;
-	margin-left: 1rem;
-	margin-bottom: 2rem;
 	font-size: 25px;
 	text-decoration: none;
+	padding-bottom: 2rem;
 }
 footer {
 	display: flex;
@@ -373,4 +366,435 @@ footer {
 
 a:hover::after {
 	width: 100%;
+}
+.openMenu {
+	display: none;
+	background-image: url(images/icon-hamburger.svg);
+	width: 20px;
+	height: 20px;
+}
+.closeMenu {
+	display: none;
+	background-image: url(images/icon-close.svg);
+	width: 20px;
+	height: 20px;
+}
+/* hover gallery */
+.makeitFisheye:hover {
+	background-blend-mode: screen;
+	background-color: rgba(255, 255, 255, 0.651);
+}
+.makeitFisheye h3:hover {
+	color: hsl(0, 0%, 0%);
+	width: 100%;
+	font-weight: bold;
+}
+.theCuriosity:hover {
+	background-blend-mode: screen;
+	background-color: rgba(255, 255, 255, 0.651);
+}
+.theCuriosity h3:hover {
+	color: hsl(0, 0%, 0%);
+	width: 100%;
+	font-weight: bold;
+}
+.deepEarth:hover {
+	background-blend-mode: screen;
+	background-color: rgba(255, 255, 255, 0.651);
+}
+.deepEarth h3:hover {
+	color: hsl(0, 0%, 0%);
+	width: 100%;
+	font-weight: bold;
+}
+.soccerTeam:hover {
+	background-blend-mode: screen;
+	background-color: rgba(255, 255, 255, 0.651);
+}
+.soccerTeam h3:hover {
+	color: hsl(0, 0%, 0%);
+	width: 100%;
+	font-weight: bold;
+}
+.nightArcade:hover {
+	background-blend-mode: screen;
+	background-color: rgba(255, 255, 255, 0.651);
+}
+.nightArcade h3:hover {
+	color: hsl(0, 0%, 0%);
+	width: 100%;
+	font-weight: bold;
+}
+.theGrid:hover {
+	background-blend-mode: screen;
+	background-color: rgba(255, 255, 255, 0.651);
+}
+.theGrid h3:hover {
+	color: hsl(0, 0%, 0%);
+	width: 100%;
+	font-weight: bold;
+}
+.fromUpAbove:hover {
+	background-blend-mode: screen;
+	background-color: rgba(255, 255, 255, 0.651);
+}
+.fromUpAbove h3:hover {
+	color: hsl(0, 0%, 0%);
+	width: 100%;
+	font-weight: bold;
+}
+.pocketBorealis:hover {
+	background-blend-mode: screen;
+	background-color: rgba(255, 255, 255, 0.651);
+}
+.pocketBorealis h3:hover {
+	color: hsl(0, 0%, 0%);
+	width: 100%;
+	font-weight: bold;
+}
+.mobileNav {
+	display: none;
+}
+.mobileInter {
+	display: none;
+}
+
+@media screen and (max-width: 700px) {
+	.navBar {
+		display: none;
+	}
+	.openMenu {
+		display: block;
+		background-image: url(images/icon-hamburger.svg);
+		width: 20px;
+		height: 20px;
+		margin-left: 4rem;
+		z-index: 0;
+	}
+	.closeMenu {
+		display: none;
+		background-image: url(images/icon-close.svg);
+		width: 20px;
+		height: 20px;
+		z-index: 9;
+	}
+	header {
+		background-image: url(images/mobile/image-hero.jpg);
+		background-repeat: no-repeat;
+		background-blend-mode: darken;
+		background-color: rgba(0, 0, 0, 0.4);
+		background-size: cover;
+		height: 100vh;
+	}
+	.mainNav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		height: 30vh;
+		padding: 2rem;
+	}
+	.mainNav img {
+		z-index: 9;
+	}
+	.headerText {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		width: 92%;
+		height: 34vh;
+		font-size: 24px;
+		margin-left: 1rem;
+		border: 3px solid white;
+	}
+	.mobileNav.active {
+		opacity: 1;
+	}
+	.mobileNav {
+		display: none;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		background-color: black;
+		opacity: 0;
+		transition: opacity 0.2s ease-in;
+	}
+	.mobilenavBar {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+		margin-left: 2rem;
+		gap: 30px;
+	}
+	.mobilenavBar a {
+		color: hsl(0, 0%, 100%);
+		font-size: 35px;
+		text-decoration: none;
+	}
+	.desktopInter {
+		display: none;
+	}
+	.topContainer {
+		display: flex;
+		align-items: center;
+		position: relative;
+		margin-top: 10rem;
+		flex-direction: column;
+	}
+	.mobileInter {
+		display: block;
+		width: 95%;
+	}
+	.leftSquare {
+		margin-left: 1rem;
+	}
+	.rightSquare {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		width: 100%;
+		height: 50vh;
+		background-color: hsl(0, 0%, 100%);
+		margin-left: -7rem;
+		margin-bottom: -20rem;
+	}
+	.rightSquare h2 {
+		color: hsl(0, 0%, 0%);
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 30px;
+		padding-left: 7rem;
+		text-align: center;
+	}
+	.rightSquare p {
+		padding-left: 7rem;
+		margin-top: 2rem;
+		text-align: center;
+	}
+	.midContainer {
+		font-weight: 400;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		margin-top: 20rem;
+		width: 100%;
+	}
+	.textMid {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		padding: 3rem 2rem;
+	}
+	.textMid input {
+		display: none;
+	}
+	.gall {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+	.imagesGall {
+		display: flex;
+		/* grid-template-columns: repeat(4, 1fr); */
+		/* grid-template-rows: repeat(2, 1fr); */
+		/* grid-column-gap: 40px; */
+		/* grid-row-gap: 17px; */
+		width: 100%;
+		flex-direction: column;
+	}
+	.deepEarth {
+		background-image: url(images/mobile/image-deep-earth.jpg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-blend-mode: darken;
+		background-color: rgba(0, 0, 0, 0);
+		width: 45vh;
+		height: 16vh;
+		/* grid-area: 1 / 1 / 2 / 2; */
+		cursor: pointer;
+	}
+	.nightArcade {
+		width: 45vh;
+		height: 16vh;
+		grid-area: 1 / 2 / 2 / 3;
+		background-image: url(images/mobile/image-night-arcade.jpg);
+		background-blend-mode: darken;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-color: rgba(0, 0, 0, 0);
+		cursor: pointer;
+	}
+	.soccerTeam {
+		width: 45vh;
+		height: 16vh;
+		grid-area: 1 / 3 / 2 / 4;
+		background-image: url(images/mobile/image-soccer-team.jpg);
+		background-blend-mode: darken;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-color: rgba(0, 0, 0, 0);
+		cursor: pointer;
+	}
+	.theGrid {
+		width: 45vh;
+		height: 16vh;
+		grid-area: 1 / 4 / 2 / 5;
+		background-image: url(images/mobile/image-night-arcade.jpg);
+		background-blend-mode: darken;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-color: rgba(0, 0, 0, 0);
+		cursor: pointer;
+	}
+	.fromUpAbove {
+		width: 45vh;
+		height: 16vh;
+		grid-area: 2 / 1 / 3 / 2;
+		background-image: url(images/mobile/image-from-above.jpg);
+		background-blend-mode: darken;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-color: rgba(0, 0, 0, 0);
+		cursor: pointer;
+	}
+	.pocketBorealis {
+		width: 45vh;
+		height: 16vh;
+		grid-area: 2 / 2 / 3 / 3;
+		background-image: url(images/mobile/image-pocket-borealis.jpg);
+		background-blend-mode: darken;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-color: rgba(0, 0, 0, 0);
+		cursor: pointer;
+	}
+	.theCuriosity {
+		width: 45vh;
+		height: 16vh;
+		grid-area: 2 / 3 / 3 / 4;
+		background-image: url(images/mobile/image-curiosity.jpg);
+		background-blend-mode: darken;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-color: rgba(0, 0, 0, 0);
+		cursor: pointer;
+	}
+
+	.makeitFisheye {
+		width: 45vh;
+		height: 16vh;
+		grid-area: 2 / 4 / 3 / 5;
+		background-image: url(images/mobile/image-fisheye.jpg);
+		background-blend-mode: darken;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-color: rgba(0, 0, 0, 0);
+		cursor: pointer;
+	}
+	.deepEarth h3,
+	.deepEarth a,
+	.nightArcade h3,
+	.nightArcade a,
+	.soccerTeam h3,
+	.soccerTeam a,
+	.theGrid h3,
+	.theGrid a,
+	.fromUpAbove h3,
+	.fromUpAbove a,
+	.pocketBorealis h3,
+	.pocketBorealis a,
+	.theCuriosity h3,
+	.theCuriosity a,
+	.makeitFisheye h3,
+	.makeitFisheye a {
+		display: flex;
+		color: hsl(0, 0%, 100%);
+		align-items: flex-end;
+		justify-content: space-evenly;
+		width: 100%;
+		height: 20vh;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 16px;
+		text-decoration: none;
+		padding-bottom: 2rem;
+	}
+	.mobileInput {
+		width: 50%;
+		height: 4vh;
+		text-transform: uppercase;
+		font-family: "Alata", sans-serif;
+		font-weight: 400;
+		font-size: 15px;
+		background-color: hsl(0, 0%, 100%);
+		border: 3px solid hsl(0, 0%, 0%);
+		color: hsl(0, 0%, 0%);
+		letter-spacing: 5px;
+		cursor: pointer;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	footer {
+		display: flex;
+		width: 100%;
+		height: 70vh;
+		background-color: hsl(0, 0%, 0%);
+		margin-top: 10rem;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	.footerNav {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		align-content: center;
+		flex-direction: column;
+		flex-wrap: wrap;
+		width: 100%;
+		color: hsl(0, 0%, 100%);
+		margin-top: 4rem;
+	}
+
+	.navBarFooter {
+		display: flex;
+		flex-direction: column;
+	}
+	.footerNav img {
+		margin-left: 0rem;
+	}
+	.socialsFooter {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		align-content: center;
+		flex-direction: column;
+		flex-wrap: wrap;
+		width: 100%;
+		color: hsl(0, 0%, 100%);
+		margin-top: 2rem;
+	}
+	.footerNav li,
+	.footerNav ul,
+	.footerNav a {
+		text-decoration: none;
+		list-style: none;
+		color: hsl(0, 0%, 100%);
+		margin-top: 1rem;
+		margin-right: 0rem;
+		text-align: center;
+	}
+	.attribution {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: hsl(0, 0%, 55%);
+		margin-top: 1rem;
+		width: 100%;
+	}
 }

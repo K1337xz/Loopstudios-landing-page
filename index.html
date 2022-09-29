@@ -36,6 +36,8 @@
 		<header>
 			<nav class="mainNav">
 				<img src="images/logo.svg" alt="logo" />
+				<span class="openMenu"></span>
+				<span class="closeMenu"></span>
 				<ul class="navBar">
 					<li><a href="">About</a></li>
 					<li><a href="">Careers</a></li>
@@ -51,6 +53,15 @@
 					that deliver
 				</h1>
 			</div>
+			<div class="mobileNav">
+				<ul class="mobilenavBar">
+					<li><a href="">About</a></li>
+					<li><a href="">Careers</a></li>
+					<li><a href="">Events</a></li>
+					<li><a href="">Products</a></li>
+					<li><a href="">Support</a></li>
+				</ul>
+			</div>
 		</header>
 		<main class="container">
 			<div class="topContainer">
@@ -58,6 +69,12 @@
 					<img
 						src="images/desktop/image-interactive.jpg"
 						alt="image-interactive"
+						class="desktopInter"
+					/>
+					<img
+						src="images/mobile/image-interactive.jpg"
+						alt="image-interactive-mobile"
+						class="mobileInter"
 					/>
 				</div>
 				<div class="rightSquare">
@@ -143,6 +160,11 @@
 								</h3>
 							</a>
 						</div>
+						<input
+							type="button"
+							value="See All"
+							class="mobileInput"
+						/>
 					</div>
 				</div>
 			</div>
@@ -178,5 +200,6 @@
 				>. Coded by <a href="https://github.com/K1337xz">Jakub B</a>.
 			</div>
 		</footer>
+		<script src="script.js"></script>
 	</body>
 </html>
